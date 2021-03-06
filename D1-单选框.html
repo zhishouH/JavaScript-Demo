@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #app {
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    #app div {
+      float: left;
+    }
+
+    .clearfix::before,
+    .clearfix::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app" class="clearfix">
+    <input type="text" id="show" value="white">
+    <br>
+    <div>
+      <input type="radio" name="color" id="black" value="black">
+      <label for="">black</label>
+    </div>
+    <div>
+      <input type="radio" name="color" id="yellow" value="yellow">
+      <label for="">yellow</label>
+    </div>
+    <div>
+      <input type="radio" name="color" id="blue" value="blue">
+      <label for="">blue</label>
+    </div>
+    <div>
+      <input type="radio" name="color" id="green" value="green">
+      <label for="">green</label>
+    </div>
+  </div>
+
+  <script>
+    const show = document.getElementById('show')
+    // console.log(show)
+    const app = document.getElementById('app')
+    const div = app.getElementsByTagName('div')
+    console.log(div)
+    const black = document.getElementById('black')
+    const yellow = document.getElementById('yellow')
+    const blue = document.getElementById('blue')
+    const green = document.getElementById('green')
+    // console.log(black, yellow, black, green)
+    black.addEventListener('click', (e) => {
+      show.value = black.value
+      show.style.color = 'yellow'
+      for (let i = 0; i < div.length; i++) {
+        div[i].style.color = 'yellow'
+      }
+      document.body.style.backgroundColor = 'black'
+    })
+    yellow.addEventListener('click', (e) => {
+      show.value = yellow.value
+      show.style.color = 'blue'
+      for (let i = 0; i < div.length; i++) {
+        div[i].style.color = 'blue'
+      }
+      document.body.style.backgroundColor = 'yellow'
+
+    })
+    blue.addEventListener('click', (e) => {
+      show.value = blue.value
+      show.style.color = 'green'
+      for (let i = 0; i < div.length; i++) {
+        div[i].style.color = 'green'
+      }
+      document.body.style.backgroundColor = 'blue'
+
+    })
+    green.addEventListener('click', (e) => {
+      show.value = green.value
+      show.style.color = 'black'
+      for (let i = 0; i < div.length; i++) {
+        div[i].style.color = 'black'
+      }
+      document.body.style.backgroundColor = 'green'
+
+    })
+
+  </script>
+</body>
+
+</html>
