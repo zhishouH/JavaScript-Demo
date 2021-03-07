@@ -49,51 +49,26 @@
 
   <script>
     const show = document.getElementById('show')
-    // console.log(show)
     const app = document.getElementById('app')
     const div = app.getElementsByTagName('div')
-    console.log(div)
     const black = document.getElementById('black')
     const yellow = document.getElementById('yellow')
     const blue = document.getElementById('blue')
     const green = document.getElementById('green')
-    // console.log(black, yellow, black, green)
-    black.addEventListener('click', (e) => {
-      show.value = black.value
-      show.style.color = 'yellow'
-      for (let i = 0; i < div.length; i++) {
-        div[i].style.color = 'yellow'
-      }
-      document.body.style.backgroundColor = 'black'
-    })
-    yellow.addEventListener('click', (e) => {
-      show.value = yellow.value
-      show.style.color = 'blue'
-      for (let i = 0; i < div.length; i++) {
-        div[i].style.color = 'blue'
-      }
-      document.body.style.backgroundColor = 'yellow'
 
-    })
-    blue.addEventListener('click', (e) => {
-      show.value = blue.value
-      show.style.color = 'green'
+    const change = (colordom, nextcol) => {
+      show.value = colordom.value
+      show.style.color = nextcol
       for (let i = 0; i < div.length; i++) {
-        div[i].style.color = 'green'
+        div[i].style.color = nextcol
       }
-      document.body.style.backgroundColor = 'blue'
+      document.body.style.backgroundColor = colordom.value
+    }
 
-    })
-    green.addEventListener('click', (e) => {
-      show.value = green.value
-      show.style.color = 'black'
-      for (let i = 0; i < div.length; i++) {
-        div[i].style.color = 'black'
-      }
-      document.body.style.backgroundColor = 'green'
-
-    })
-
+    black.addEventListener('click', (e) => change(black, 'yellow'))
+    yellow.addEventListener('click', (e) => change(yellow, 'blue'))
+    blue.addEventListener('click', (e) => change(blue, 'green'))
+    green.addEventListener('click', (e) => change(green, 'black'))
   </script>
 </body>
 
