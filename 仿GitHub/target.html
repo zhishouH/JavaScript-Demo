@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/target.css">
+  <title>目标</title>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <img id="logo" src="images/github.png" alt="logo">
+      <input id="ipSearch" type="search" value="Search or jump to...">
+      <ul>
+        <li><a href="">Pull requests</a></li>
+        <li><a href="">Issues</a></li>
+        <li><a href="">Marketplace</a></li>
+        <li><a href="">Explore</a></li>
+      </ul>
+      <div id="user">
+        <img src="images/notice.png" alt="通知">
+        <span>+</span>
+        <img id="samllavatar" src="images/avatar.jpg" alt="头像">
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="repositories.html">仓库</a></li>
+        <li><a href="plan.html">计划</a></li>
+        <li><a href="target.html">目标</a></li>
+      </ul>
+      <div id="changeColor">
+        <input id="white" type="button" onclick="changeColor(color1)">
+        <input id="black" type="button" onclick="changeColor(color2)">
+      </div>
+    </nav>
+    <main>
+      <div id="leftIntro">
+        <div id="bigAvatar">
+          <img id="BigAvatar" src="images/avatar.jpg" alt="avatar">
+        </div>
+        <div id="userName">
+          <h2>zhishouh</h2>
+          <span>学无止境</span>
+        </div>
+        <button id="edit">Edit profile</button>
+        <p><span>5</span>followers·<span>6</span>following·☆<span>9</span></p>
+        <hr>
+        <div id="organizations">
+          <h4>Organizations</h4>
+          <div class="org"><img src="images/og1.png" alt="og1"></div>
+          <div class="org"><img src="images/og2.png" alt="og2"></div>
+        </div>
+      </div>
+      <div id="rightIntro">
+        <p>人生目標：我要賺好多好多錢，然後去買快樂</p>
+        <div id="carousel">
+          <img id="carouselPic" src="images/lb (1).jpg" alt="">
+          <br>
+          <div id="btns">
+            <button id="pre">上一张</button>
+            <button id="next">下一张</button>
+            <button id="start">自动切换</button>
+            <button id="stop">停止切换</button>
+          </div>
+
+        </div>
+      </div>
+    </main>
+    <hr>
+    <footer>
+      <ul>
+        <li>© 2020 GitHub, Inc.</li>
+        <li><a href="">Terms</a></li>
+        <li><a href="">Privacy</a></li>
+        <li><a href="">Security</a></li>
+        <li><a href="">Status</a></li>
+        <li><a href="">Help</a></li>
+        <li><a href=""><img src="images/github2.png" alt=""></a></li>
+        <li><a href="">Contact GitHub</a></li>
+        <li><a href="">Pricing</a></li>
+        <li><a href="">API</a></li>
+        <li><a href="">Training</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">About</a></li>
+      </ul>
+    </footer>
+  </div>
+  <div id="box"></div>
+  <script src="js/changeColor.js"></script>
+  <script src="js/blink.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/follow.js"></script>
+
+</body>
+
+</html>

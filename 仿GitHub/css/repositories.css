@@ -1,0 +1,350 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+hr {
+  border: 1px solid #ddd;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  color: #ddd;
+}
+#wrap {
+  width: 1200px;
+  margin: 0px auto;
+}
+
+header {
+  height: 64px;
+  background-color: #24292e;
+  position: relative;
+}
+header #logo {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 12px;
+  left: 40px;
+}
+header #ipSearch {
+  position: absolute;
+  top: 17px;
+  left: 100px;
+  width: 250px;
+  height: 30px;
+  border: 1px solid #ddd;
+  color: #ddd;
+  background-color: #24292e;
+  outline: none;
+  border-radius: 8px;
+  padding-left: 10px;
+}
+
+header ul {
+  position: absolute;
+  top: 0px;
+  left: 360px;
+  line-height: 64px;
+}
+header ul li {
+  float: left;
+  margin-right: 10px;
+  list-style-type: none;
+}
+header ul li a {
+  color: #fff;
+}
+header ul li a:hover {
+  color: #757575;
+}
+header #user {
+  width: 100px;
+  height: 25px;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+header #user span {
+  display: block;
+  height: 25px;
+  font-weight: bold;
+  color: #fff;
+
+}
+header #user img {
+  width: 25px;
+  height: 25px;
+}
+header #user #samllavatar {
+  border-radius: 50%;
+}
+
+nav {
+  height: 40px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+nav ul {
+  width: 500px;
+  height: 20px;
+  margin-left: 400px;
+  margin-top: 20px;  
+  float: left;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+nav ul li {
+  margin-left: 20px;
+  list-style-type: none;
+  line-height: 30px;
+}
+nav .level-2-menu {
+  display: none;
+
+}
+nav #changeColor {
+  width: 100px;
+  height: 20px;
+  margin: 20px 40px;
+  float: right;
+}
+nav #changeColor input {
+  width: 40px;
+  height: 20px;
+  outline: none;
+}
+nav #changeColor input#white {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+nav #changeColor input#black {
+  background-color: #000;
+  border: 1px solid #ddd;
+  margin-left: 15px;
+}
+nav #changeColor input#white:active {
+  background-color: #F5F5F5;
+  border: 1px solid #F5F5F5;
+} 
+nav #changeColor input#black:active {
+  background-color: #424242;
+  border: 1px solid #424242;
+} 
+
+main {
+  height: 500px;
+  margin: 0px auto;
+  position: relative;
+}
+main #leftIntro {
+  width: 300px;
+  height: 500px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+main #leftIntro #bigAvatar {
+  height: 250px;
+  width: 250px;
+  margin: 0px auto;
+}
+main #leftIntro #bigAvatar img {
+  width:250px;
+  height: 250px;
+  border-radius: 50%;
+}
+main #leftIntro #userName {
+  margin: 0px 0px 20px 25px;
+}
+main #leftIntro #userName h2 {
+  font-weight: normal;
+  margin: 5px 0px;
+}
+main #leftIntro #edit {
+  width: 250px;
+  height: 30px;
+  margin-left: 25px;
+  outline: none;
+  border-radius: 8px; 
+  border: 1px solid #F5F5F5;
+  background-color: #F5F5F5;
+  transition: 0.5s;
+  color: #333;
+}
+main #leftIntro #edit:active {
+  border: 1px solid #E0E0E0;
+  background-color: #E0E0E0;
+}
+main #leftIntro p {
+  width: 250px;
+  margin: 10px 25px;
+}
+main #leftIntro p span {
+  padding-right: 4px;
+}
+main #leftIntro #organizations {
+  width: 250px;
+  height: 60px;
+  margin: 20px 25px;
+}
+main #leftIntro #organizations .org {
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+main #leftIntro #organizations img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+main #rightIntro {
+  width: 880px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 4px;
+}
+main #rightIntro .search-bar {
+  height: 40px;
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  }
+main #rightIntro .search-bar .search-bar-input {
+  width: 400px;
+  height: 30px;
+}
+main #rightIntro .search-bar .search-bar-input input {
+  width: 400px;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  padding-left: 10px;
+  color: #ddd;
+}
+main #rightIntro .search-bar .type {
+  width: 150px;
+  height: 30px;
+  border: 1px solid #ddd;
+  background-color: #ddd;
+  border-radius: 4px;
+}
+main #rightIntro .search-bar .type ul, main #rightIntro .search-bar .language ul{
+  list-style-type: none;
+  background-color: #ddd;
+}
+main #rightIntro .search-bar .type ul li, main #rightIntro .search-bar .language ul li{
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 4px;
+}
+main #rightIntro .search-bar .type .menu ,main #rightIntro .search-bar .language .menu{
+  display: none;
+}
+main #rightIntro .search-bar .type .menu li,main #rightIntro .search-bar .language .menu li{
+  border: 1px solid #ddd;
+  box-shadow: 0px 0px 10px 0px #000;
+  
+}
+main #rightIntro .search-bar .type .menu li:hover, main #rightIntro .search-bar .language .menu li:hover {
+  background-color: #9E9E9E;
+} 
+main #rightIntro .search-bar .language {
+  width: 150px;
+  height: 30px;
+  border: 1px solid #ddd;
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+main #rightIntro .search-bar .new {
+  width: 100px;
+  height: 30px;
+  border: 1px solid #28B463;
+  background-color: #28B463;
+  border-radius: 4px;
+}
+main #rightIntro .search-bar .new:active {
+  border: 1px solid #82E0AA;
+  background-color: #82E0AA;
+}
+main #rightIntro .search-bar .new img {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  float: left;
+}
+main #rightIntro .search-bar .new span {
+  line-height: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+main #rightIntro .warehouse {
+  height: 400px;
+  margin-top: 10px;
+}
+
+main #rightIntro .warehouse .warehouse-child{
+  width: 880px;
+  height: 70px;
+  border-bottom: 1px solid #ddd; 
+  margin-bottom: 10px;
+}
+main #rightIntro .warehouse .warehouse-child h3{
+  margin-top: 10px;
+}
+main #rightIntro .warehouse .warehouse-child span{
+  height: 50px;
+  line-height: 50px;
+}
+main #rightIntro .warehouse .warehouse-child  .updated {
+  margin-left: 20px;
+}
+main #rightIntro .warehouse .warehouse-child p {
+  float: right;
+  width: 60px;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+main #rightIntro .warehouse .warehouse-child input {
+  width: 15px;
+  height: 15px;
+}
+
+
+
+footer ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+footer ul li {
+  list-style-type: none;
+  line-height: 30px;
+}
+footer ul li img {
+  width: 30px;
+  height: 30px;
+}

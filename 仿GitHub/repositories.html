@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/repositories.css">
+  <title>仓库</title>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <img id="logo" src="images/github.png" alt="logo">
+      <input id="ipSearch" type="search" value="Search or jump to...">
+      <ul>
+        <li><a href="">Pull requests</a></li>
+        <li><a href="">Issues</a></li>
+        <li><a href="">Marketplace</a></li>
+        <li><a href="">Explore</a></li>
+      </ul>
+      <div id="user">
+        <img src="images/notice.png" alt="通知">
+        <span>+</span>
+        <img id="samllavatar" src="images/avatar.jpg" alt="头像">
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="repositories.html">仓库</a></li>
+        <li><a href="plan.html">计划</a></li>
+        <li><a href="target.html">目标</a></li>
+      </ul>
+      <div id="changeColor">
+        <input id="white" type="button" onclick="changeColor(color1)">
+        <input id="black" type="button" onclick="changeColor(color2)">
+      </div>
+    </nav>
+
+    <main>
+      <div id="leftIntro">
+        <div id="bigAvatar">
+          <img id="BigAvatar" src="images/avatar.jpg" alt="avatar">
+        </div>
+        <div id="userName">
+          <h2>zhishouh</h2>
+          <span>学无止境</span>
+        </div>
+        <button id="edit">Edit profile</button>
+        <p><span>5</span>followers·<span>6</span>following·☆<span>9</span></p>
+        <hr>
+        <div id="organizations">
+          <h4>Organizations</h4>
+          <div class="org"><img src="images/og1.png" alt="og1"></div>
+          <div class="org"><img src="images/og2.png" alt="og2"></div>
+        </div>
+      </div>
+
+      <div id="rightIntro">
+        <div class="search-bar">
+          <div class="search-bar-input">
+            <input type="search" value="Find a repository">
+          </div>
+          <div class="type">
+            <ul>
+              <li onmouseover="show(this)" onmouseout="hide(this)">
+                Type:All
+                <ul class="menu">
+                  <li>Select type</li>
+                  <li><a href="">All</a></li>
+                  <li><a href="">Public</a></li>
+                  <li><a href="">Private</a></li>
+                  <li><a href="">Sources</a></li>
+                  <li><a href="">Forks</a></li>
+                  <li><a href="">Archived</a></li>
+                  <li><a href="">Mirrors</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="language">
+            <ul>
+              <li onmouseover="show(this)" onmouseout="hide(this)">
+                Language:All
+                <ul class="menu">
+                  <li><a href="">Select Language</a></li>
+                  <li><a href="">All</a></li>
+                  <li><a href="">Javascript</a></li>
+                  <li><a href="">Java</a></li>
+                  <li><a href="">CSS</a></li>
+                  <li><a href="">HTML</a></li>
+                  <li><a href="">C</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="new">
+            <img src="images/New Event.png" alt="">
+            <span>NEW</span>
+          </div>
+        </div>
+        <hr>
+        <div class="warehouse">
+          <div class="warehouse-child">
+            <h3><a href="">Vue.js</a></h3>
+            <span>🟡 Javascript</span>
+            <span class="updated">Updated 13 days ago</span>
+            <p><input type="checkbox" id="star1">☆star</p>
+          </div>
+          <div class="warehouse-child">
+            <h3><a href="">javascript</a></h3>
+            <span>🟡 Javascript</span>
+            <span class="updated">Updated on 27 Sep</span>
+            <p><input type="checkbox" id="star2">☆star</p>
+          </div>
+          <div class="warehouse-child">
+            <h3><a href="">HTML-CSS</a></h3>
+            <span>🔴HTML</span>
+            <span class="updated">Updated on 22 Sep</span>
+            <p><input type="checkbox" id="star3">☆star</p>
+          </div>
+          <div class="warehouse-child">
+            <h3><a href="">CSS3</a></h3>
+            <span>🟤CSS</span>
+            <span class="updated">Updated on 22 Sep</span>
+            <p><input type="checkbox" id="star4">☆star</p>
+          </div>
+          <div class="warehouse-child">
+            <h3><a href="">Java</a></h3>
+            <span>🟤Java</span>
+            <span class="updated">Updated on 8 Oct</span>
+            <p><input type="checkbox" id="star5">☆star</p>
+          </div>
+        </div>
+
+      </div>
+    </main>
+    <hr>
+    <footer>
+      <ul>
+        <li>© 2020 GitHub, Inc.</li>
+        <li><a href="">Terms</a></li>
+        <li><a href="">Privacy</a></li>
+        <li><a href="">Security</a></li>
+        <li><a href="">Status</a></li>
+        <li><a href="">Help</a></li>
+        <li><a href=""><img src="images/github2.png" alt=""></a></li>
+        <li><a href="">Contact GitHub</a></li>
+        <li><a href="">Pricing</a></li>
+        <li><a href="">API</a></li>
+        <li><a href="">Training</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">About</a></li>
+      </ul>
+    </footer>
+
+  </div>
+
+  <script src="js/changeColor.js"></script>
+  <script src="js/level_2_menu.js"></script>
+  <script src="js/checkbox_star.js"></script>
+  <script src="js/blink.js"></script>
+
+</body>
+
+</html>
