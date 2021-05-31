@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #wrap {
+      width: 400px;
+      height: 500px;
+      background-color: #EAEDED;
+      border-radius: 8px;
+      margin: 50px auto;
+      padding-top: 20px;
+    }
+
+    #wrap .songAdd {
+      width: 100%;
+      height: 30px;
+      text-align: center;
+    }
+
+    #wrap .songAdd .inp-song {
+      box-sizing: border-box;
+      width: 300px;
+      height: 30px;
+      border-radius: 16px;
+      outline: none;
+      border: 1px solid #333;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding-left: 16px;
+    }
+
+    #wrap .songAdd .btn-add {
+      width: 80px;
+      height: 30px;
+      border-radius: 16px;
+      outline: none;
+      color: #fff;
+      font-size: 16px;
+      vertical-align: middle;
+      border: 1px solid #3498DB;
+      background-color: #3498DB;
+    }
+
+    #wrap .songAdd .btn-add:active {
+      border: 1px solid #AED6F1;
+      background-color: #AED6F1;
+    }
+
+    #wrap ul {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    #wrap ul li {
+      list-style: none;
+      padding-left: 24px;
+      background-color: pink;
+      margin: 8px 0;
+    }
+
+    #wrap ul li:nth-child(2n) {
+      background-color: teal;
+    }
+
+    #wrap ul li:nth-child(2n + 1) {
+      background-color: tomato;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <form class="songAdd">
+      <input id="song" class="inp-song" type="text" placeholder="请添加歌曲">
+      <input id="add" class="btn-add" type="button" value="添加">
+    </form>
+    <ul>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+    </ul>
+  </div>
+
+  <script>
+    function songAdd() {
+      const song = document.querySelector('#song')
+      const add = document.querySelector('#add')
+      const ul = document.querySelector('ul')
+      console.log(ul)
+      song.addEventListener('click', () => {
+        song.value = ''
+      })
+      add.addEventListener('click', () => {
+        const li = document.createElement('li')
+        li.innerHTML = song.value
+        ul.appendChild(li)
+      })
+    }
+    songAdd()
+  </script>
+</body>
+
+</html>
